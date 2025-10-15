@@ -43,5 +43,5 @@ def get_device_config(device_id: str,
 
     return JSONResponse(
         status_code=status.HTTP_200_OK,
-        content={"device": device.serialize()}
+        content={"device": device.get_device_id()}
     )
