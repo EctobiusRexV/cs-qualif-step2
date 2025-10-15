@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from abc import ABC, abstractmethod
 
 from cs_qualif_step2.core.domain.device.device import Device

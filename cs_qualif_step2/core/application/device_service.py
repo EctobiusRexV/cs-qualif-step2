@@ -22,3 +22,10 @@ class DeviceService:
         self.device_repository.save(device)
 
         return str(device.get_device_id())
+
+    def find_config_by_device_id(self, device_id):
+        try:
+            device = self.device_repository.find_by_id(device_id)
+        except:
+            raise
+        return device
